@@ -41,8 +41,8 @@
 
 				<!-- Register Form -->
 				<div class="register-form">
-					<form method="post" action="https://demo.themeim.com/html/braine/contact.html">
-						
+					<form method="post" action="{% url "web:crearUsuario" %}">
+						{% csrf_token %}
 						<div class="form-group">
 							<label>Usuario:</label>
 							<input type="text" name="name" placeholder="" required="">
@@ -68,8 +68,8 @@
 							<!-- Button Box -->
 							<button type="submit" class="submit-btn btn-style-one">
 								<span class="btn-wrap">
-									<span class="text-one">Inicia sesión ahora</span>
-									<span class="text-two">Inicia sesión ahora</span>
+									<span class="text-one">Crear Usuario</span>
+									<span class="text-two">Crear Usuario</span>
 								</span>
 							</button>
 						</div>
